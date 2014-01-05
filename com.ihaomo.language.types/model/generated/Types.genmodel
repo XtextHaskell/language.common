@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.ihaomo.language.types/src-gen" editDirectory="/com.ihaomo.language.types.edit/src"
+    editorDirectory="/com.ihaomo.language.types.editor/src" modelPluginID="com.ihaomo.language.types"
+    forceOverwrite="true" modelName="Types" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="com.ihaomo.language.types.edit"
+    editorPluginID="com.ihaomo.language.types.editor" runtimeVersion="2.9">
+  <genPackages prefix="Types" basePackage="com.ihaomo.language" disposableProviderFactory="true"
+      fileExtensions="types" ecorePackage="Types.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Types.ecore#//ParamTypeEnum">
+      <genEnumLiterals ecoreEnumLiteral="Types.ecore#//ParamTypeEnum/TInt"/>
+      <genEnumLiterals ecoreEnumLiteral="Types.ecore#//ParamTypeEnum/TString"/>
+    </genEnums>
+    <genClasses ecoreClass="Types.ecore#//TypeLibrary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Types.ecore#//TypeLibrary/primitiveTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Types.ecore#//TypeLibrary/parametedTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="Types.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Types.ecore#//Type/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Types.ecore#//PrimitiveType"/>
+    <genClasses ecoreClass="Types.ecore#//ParametedType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Types.ecore#//ParametedType/paramTypes"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

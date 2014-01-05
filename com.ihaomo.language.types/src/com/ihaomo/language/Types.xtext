@@ -1,0 +1,30 @@
+grammar com.ihaomo.language.Types with org.eclipse.xtext.common.Terminals
+
+generate types "http://www.ihaomo.com/language/Types"
+
+TypeLibrary:
+	{TypeLibrary}
+	'primitive' 'type' '{' primitiveTypes+=PrimitiveType* '}' 
+	('parameted' 'type' '{' parametedTypes+=ParametedType* '}')?
+;
+	
+Type:
+	PrimitiveType | ParametedType;
+	
+PrimitiveType :
+	{PrimitiveType} name = ID
+;
+
+ParametedType :
+	name=ID '(' paramTypes+=ParamTypeEnum (',' paramTypes+=ParamTypeEnum)*')'
+;
+
+enum ParamTypeEnum :
+	TInt = 'int' | TString = 'string' 
+;
+
+// how to define type reference?
+//TypeReferene :
+//	type=[PrimitiveType] |
+//	type=[ParametedType] '(' ')'
+//;
