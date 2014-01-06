@@ -17,6 +17,7 @@
     <genClasses ecoreClass="Functions.ecore#//Function">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Functions.ecore#//Function/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Functions.ecore#//Function/paramTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Functions.ecore#//Function/varArgs"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Functions.ecore#//Function/retType"/>
     </genClasses>
   </genPackages>

@@ -15,6 +15,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="paramTypes" unique="false"
         upperBound="-1" eType="ecore:EClass ../../../com.ihaomo.language.types/model/generated/Types.ecore#//PrimitiveType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varArgs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="retType" eType="ecore:EClass ../../../com.ihaomo.language.types/model/generated/Types.ecore#//PrimitiveType"/>
   </eClassifiers>
 </ecore:EPackage>

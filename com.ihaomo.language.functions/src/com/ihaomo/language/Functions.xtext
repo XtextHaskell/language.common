@@ -13,6 +13,6 @@ Import :
 
 Function:
 	name=ID 
-	'(' (paramTypes+=[PrimitiveType] (',' paramTypes+=[PrimitiveType])*)? ')'
+	'(' (paramTypes+=[PrimitiveType] (',' paramTypes+=[PrimitiveType])*)? varArgs?='...'? ')'
 	(':' retType = [PrimitiveType])?
 	;
