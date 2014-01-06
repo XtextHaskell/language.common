@@ -1,0 +1,18 @@
+grammar com.ihaomo.language.Functions with org.eclipse.xtext.common.Terminals
+
+generate functions "http://www.ihaomo.com/language/Functions"
+
+import "http://www.ihaomo.com/language/Types"
+
+FunctionLibrary:
+	(imports+=Import)* // allow imports
+	functions+=Function*;
+
+Import : 
+  'import' importURI=STRING; // feature must be named importURI	
+
+Function:
+	name=ID 
+	'(' (paramTypes+=[PrimitiveType] (',' paramTypes+=[PrimitiveType])*)? ')'
+	(':' retType = [PrimitiveType])?
+	;

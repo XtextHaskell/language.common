@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="functions" nsURI="http://www.ihaomo.com/language/Functions"
+    nsPrefix="functions">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionLibrary">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="imports" upperBound="-1"
+        eType="#//Import" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functions" upperBound="-1"
+        eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Import">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="importURI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paramTypes" unique="false"
+        upperBound="-1" eType="ecore:EClass ../../../com.ihaomo.language.types/model/generated/Types.ecore#//PrimitiveType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="retType" eType="ecore:EClass ../../../com.ihaomo.language.types/model/generated/Types.ecore#//PrimitiveType"/>
+  </eClassifiers>
+</ecore:EPackage>

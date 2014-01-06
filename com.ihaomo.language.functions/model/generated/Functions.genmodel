@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.ihaomo.language.functions/src-gen" editDirectory="/com.ihaomo.language.functions.edit/src"
+    editorDirectory="/com.ihaomo.language.functions.editor/src" modelPluginID="com.ihaomo.language.functions"
+    forceOverwrite="true" modelName="Functions" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="com.ihaomo.language.functions.edit"
+    editorPluginID="com.ihaomo.language.functions.editor" runtimeVersion="2.9" usedGenPackages="../../../com.ihaomo.language.types/model/generated/Types.genmodel#//types">
+  <genPackages prefix="Functions" basePackage="com.ihaomo.language" disposableProviderFactory="true"
+      fileExtensions="functions" ecorePackage="Functions.ecore#/">
+    <genClasses ecoreClass="Functions.ecore#//FunctionLibrary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Functions.ecore#//FunctionLibrary/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Functions.ecore#//FunctionLibrary/functions"/>
+    </genClasses>
+    <genClasses ecoreClass="Functions.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Functions.ecore#//Import/importURI"/>
+    </genClasses>
+    <genClasses ecoreClass="Functions.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Functions.ecore#//Function/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Functions.ecore#//Function/paramTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Functions.ecore#//Function/retType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
